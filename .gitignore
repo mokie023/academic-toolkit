@@ -1,0 +1,21 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.cache
+
+# Ignore database dumps (optional)
+*.sql
+
+# Ignore config files with sensitive info
+config.php
+.env
+
+# Ignore IDE files (VSCode, PhpStorm)
+.vscode/
+.idea/
+
+# Ignore Composer vendor folder (if using Composer)
+vendor/

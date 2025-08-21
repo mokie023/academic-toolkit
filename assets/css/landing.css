@@ -1,0 +1,96 @@
+/* ====== Hero Section Styling ====== */
+.hero-section {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.overlay h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Text shadow for clarity */
+}
+
+.overlay p {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    max-width: 800px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ====== CTA Buttons Styling ====== */
+.cta {
+    display: flex;
+    gap: 15px;
+}
+
+.cta .btn {
+    margin: 5px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+}
+
+.cta .btn-success {
+    background-color: #28a745;
+    border: none;
+    color: white;
+}
+
+.cta .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.cta .btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* ====== Smooth Scroll for Navigation ====== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 2.5em;
+    }
+
+    .overlay p {
+        font-size: 1.2em;
+    }
+
+    .cta {
+        flex-direction: column;
+    }
+}
